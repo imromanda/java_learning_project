@@ -62,6 +62,20 @@ public class Entrada {
     }
     
     
+    public static int enteroRango(String msg, int min, int max) {
+    	int valor;
+    	do {
+    		valor = entero(msg);
+    		if (valor < min || valor > max)
+    			System.out.println("Error. "
+    					+ "Valor fuera de rango"
+    					+ " (" + min + " - " + max + ")");
+    	} while (valor < min || valor > max);
+    	
+    	return valor;
+    }
+    
+    
     public static double doble(String msg) {
     	
     	//Versión con validación

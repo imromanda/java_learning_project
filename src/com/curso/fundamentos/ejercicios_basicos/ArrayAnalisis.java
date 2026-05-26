@@ -23,7 +23,7 @@ public class ArrayAnalisis {
 		//3. Recuperar el número mayor del array
 		
 		int nroMayor = numeros[0];
-		
+		int nroMenor = numeros[0];
 		
 		for (int numero:numeros) {
 			//suma = suma + numero;
@@ -33,6 +33,10 @@ public class ArrayAnalisis {
 				nroMayor = numero;
 			}
 			
+			if (numero < nroMenor) {
+				nroMenor = numero;
+			}
+			
 		} 
 		
 		System.out.println("La suma total es " + suma);
@@ -40,6 +44,8 @@ public class ArrayAnalisis {
 		media = (suma/numeros.length);
 		System.out.println("La media es " + media);
 		System.out.println("El número mayor es " + nroMayor);
+		System.out.println("El número menor es " + nroMenor);
+
 
 			//for (int i = 0; i < numeros.length; i++);
 		

@@ -40,12 +40,6 @@ public class Main {
                 case 6 -> Ejercicio06_Scanner.ejecutar();
                 case 7 -> Ejercicio07_Condicionales.ejecutar();
                 case 8 -> Ejercicio08_Bucles.ejecutar();
-                case 9 -> Ejercicio09_Arrays.ejecutar();
-                case 10 -> Ejercicio10_Metodos.ejecutar();
-                case 11 -> Ejercicio11_ClasesObjetos.ejecutar();
-                case 12 -> Ejercicio12_Encapsulacion.ejecutar();
-                case 13 -> Ejercicio13_Constructores.ejecutar();
-                case 14 -> Ejercicio14_Comentarios.ejecutar();
             }
             
         
