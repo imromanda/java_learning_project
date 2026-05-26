@@ -20,20 +20,28 @@ public class ArrayAnalisis {
 		
 		int suma = 0; 
 		double media = 0;
+		//3. Recuperar el número mayor del array
+		
+		int nroMayor = numeros[0];
+		
 		
 		for (int numero:numeros) {
-			suma = suma + numero;
+			//suma = suma + numero;
+			suma +=numero; //Contracción de suma = suma + numero en JAVA
 			System.out.println("Paso a paso " + suma);
+			if (numero > nroMayor) {
+				nroMayor = numero;
+			}
+			
 		} 
 		
-		System.out.println("Suma total " + suma);
+		System.out.println("La suma total es " + suma);
 		
 		media = (suma/numeros.length);
-		System.out.println("Media " + media);
+		System.out.println("La media es " + media);
+		System.out.println("El número mayor es " + nroMayor);
 
-//		for (int i = 0; i < numeros.length; i++);
-		
-		
+			//for (int i = 0; i < numeros.length; i++);
 		
 	}
 	
