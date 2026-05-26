@@ -74,7 +74,7 @@ public class EjercicioArrayList {
 
 		pintaArray("\nArray Actual: ", numeros);
 		
-		int indAModif = Entrada.enteroRango("\nÍndice del número a "
+		int indAModif = Entrada.enteroRango("\nÍndice del esaf número a "
 				+ "modificar: (0 - " + (numeros.size()-1) + ")", 0 , numeros.size()-1);
 		
 		System.out.println(numeros.get(indAModif));
