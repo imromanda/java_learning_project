@@ -40,21 +40,16 @@ public class EjercicioArrayList {
 			case 2 -> nroModificado(numeros);
 			case 3 -> borrarNro(numeros);
 			case 4 -> analisisArray(numeros);
-			case 0 -> System.out.println("Cálculo terminado");
-
-			default -> System.out.println("Inténtalo otra vez");
-			}			
+			case 0 -> salir = true;
 			
-		} //final del while
-		
-
-
-		
-		
+			//default -> System.out.println("Inténtalo otra vez"); 
+			//Al usar el enteroRango el default ya no es necesario
+					
+			}//Final del switch	
+		} //final del while		
 	} //final del main
 	
-	
-	
+
 	
 	public static void nuevoNro(ArrayList<Integer> numeros)  {
 		
@@ -142,8 +137,7 @@ public class EjercicioArrayList {
 	} //Fin de 4. Mostrar análisis
 
 	
-	
-	
+
 	/////////////////////UTILS/////////////////////////////
 	
 	

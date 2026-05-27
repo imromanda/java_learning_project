@@ -13,7 +13,6 @@ class Moto {
 }
 
 
-
 public class Ejercicio13_Constructores {
 
 	public static void main(String[] args) {
