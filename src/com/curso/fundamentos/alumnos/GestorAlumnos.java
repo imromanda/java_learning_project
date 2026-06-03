@@ -13,18 +13,15 @@ public class GestorAlumnos {
 	
 	
 	
-	//Añadir alumnos
-	public void añadirAlumno (Alumno alumno) {
+	//Anadir alumnos
+	public void anadirAlumno (Alumno alumno) {
 		listaAlumnos.add(alumno);
-		System.out.println("\nAlumno " + alumno.getNombre() +  " añadido correctamente.");
+		System.out.println("\nAlumno " + alumno.getNombre() +  " anadido correctamente.");
 		}
-	public void borrarAlumno (Alumno alumno) {
-		listaAlumnos.remove(alumno);
-		System.out.println("\nAlumno " + alumno.getNombre() +  " eliminado correctamente.");
-		}
+
 	
 	//Modificar alumno
-	public boolean editarAlumno (String nombreBuscado, String nuevoNombre, int nuevaEdad, String nuevoCurso) {
+	public boolean modificarAlumno (String nombreBuscado, String nuevoNombre, int nuevaEdad, String nuevoCurso) {
 		for (Alumno a:listaAlumnos) {
 			if (a.getNombre().equalsIgnoreCase(nombreBuscado)) {
 				a.setNombre(nuevoNombre); 				
@@ -32,12 +29,34 @@ public class GestorAlumnos {
 				a.setCurso(nuevoCurso); 
 				System.out.println("\nEl alumno " + nombreBuscado + " ha sido sustituido por " + a.getNombre());
 				return true;
-				}
+				} 
 			} //Fin for
 	
 	System.out.println("\nAlumno no encontrado");
 	return false;
 	} //fin editarAlumno
+	
+	
+	//Eliminar alumno
+	public boolean eliminarAlumno (String nombreBuscado) {
+		for (Alumno a:listaAlumnos) {
+				if (a.getNombre().equalsIgnoreCase(nombreBuscado)) {
+					listaAlumnos.remove(a);
+					System.out.println("\nAlumno " + nombreBuscado +  " eliminado correctamente.");
+					return true;
+				}
+			}
+		System.out.println("\nAlumno no encontrado");
+		return false;
+		}
+	
+	//Mostrar la lista de alumnos
+	public void mostrarTodosAlumnos() {
+		for (Alumno a:listaAlumnos) {
+			a.mostrarInfo();
+		}
+		
+	}
 	
 	
 }// Fin class GestorAlumnos

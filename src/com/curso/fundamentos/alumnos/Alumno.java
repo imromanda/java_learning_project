@@ -28,8 +28,10 @@ public class Alumno extends Persona {
 	@Override
 	public void mostrarInfo() {
 		System.out.println("\nNombre: " + getNombre());
-		System.out.println("\nEdad: " + getEdad());
-		System.out.println("\nCurso: " + getCurso());
+		System.out.println("Edad: " + getEdad());
+		System.out.println("Curso: " + getCurso());
+		System.out.println("------------------");
+
 		}		
 	
 	}

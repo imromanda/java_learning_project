@@ -40,8 +40,8 @@ public class Persona {
 	//Método para MOSTRAR LA INFO
 	
 	public void mostrarInfo() {
-		System.out.println("\nNombre: " + getNombre());
-		System.out.println("\nEdad: " + getEdad());
+		System.out.println("Nombre: " + getNombre());
+		System.out.println("Edad: " + getEdad());
 }
 
 } //FIN class Persona
