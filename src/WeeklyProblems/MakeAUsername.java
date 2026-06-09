@@ -1,14 +1,12 @@
 package WeeklyProblems;
 
-import java.util.Scanner;
 
 public class MakeAUsername {
 
-	public class Main {
 	    public static void main(String[] args) {
-	        Scanner sc = new Scanner(System.in);
-	        String firstName = sc.nextLine().trim();
-	        String lastName = sc.nextLine().trim();
+
+	        String firstName = "Pepe";
+	        String lastName = "Ramirez";
 		
 	        // Create username (lowercase, no space)
 	        String username = firstName.trim().concat(lastName.trim()).toLowerCase();	       
@@ -26,4 +24,4 @@ public class MakeAUsername {
 					System.out.println("Initials: " + initials);
 	    }
 	
-}
+    }
