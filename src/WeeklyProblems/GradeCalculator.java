@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class GradeCalculator {
 	
 	    public static void main(String[] args) {
-	        int score = 60;
-
+	        Scanner sc = new Scanner(System.in);
+	        int score = Integer.parseInt(sc.nextLine().trim());
+	    	
 	        // Print the grade
 	      if (score >= 90) {System.out.println("A");
 	             } else if (score <=80 && score >=89) {System.out.println("B");
@@ -14,6 +15,7 @@ public class GradeCalculator {
 	             } else if (score <=60 && score >=69) {System.out.println("D");
 	             } else {System.out.println("F");}
 
+	      sc.close();
 	    }
 	}
 

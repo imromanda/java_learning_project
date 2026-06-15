@@ -64,7 +64,7 @@ public class EjercicioArrayList {
 	
 
 	
-	public static void nroModificado(ArrayList numeros)  {
+	public static void nroModificado(ArrayList<Integer> numeros)  {
 		System.out.println("    ");
 
 		pintaArray("\nArray Actual: ", numeros);

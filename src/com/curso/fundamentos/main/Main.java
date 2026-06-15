@@ -47,6 +47,7 @@ public class Main {
 
         
         System.out.println("Fin del programa.");
+        sc.close();
     }
 
 public static void main(String[] args) {

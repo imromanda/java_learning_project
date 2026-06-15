@@ -1,8 +1,6 @@
 package WeeklyProblems;
 import java.util.Scanner;
 
-import com.curso.fundamentos.utils.Entrada;
-
 public class LeapYear {
 
 		public class Main {
@@ -16,6 +14,7 @@ public class LeapYear {
 		            System.out.println("Not a leap year");
 		        }
 		        // Check and print
+		        sc.close();
 		    }
 		}
 }

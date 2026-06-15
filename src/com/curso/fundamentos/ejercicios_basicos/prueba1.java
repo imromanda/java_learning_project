@@ -9,6 +9,7 @@ public class prueba1 {
 	        String myString = sc.nextLine().trim();
 	        int resultado = countConsonants(myString);
 	        System.out.println(resultado);
+	        sc.close();
 		}//fin Main
 	    
 	    
@@ -19,10 +20,10 @@ public class prueba1 {
 		String	replaced2 = replaced1.replace("i", "");
 		String	replaced3 = replaced2.replace("o", "");
 		String	replaced4 = replaced3.replace("u", "");
-		String	replaced5 = replaced4.replace("", "");
+		String	replaced5 = replaced4.replace(" ", "");
 
 
-		int out = replaced4.length();
+		int out = replaced5.length();
 					return out;
 			    }//Fin countConsonants
 	    
